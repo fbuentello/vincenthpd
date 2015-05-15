@@ -10,11 +10,11 @@ author: bootply.com
 
 
 html,body{
- height:100%;
+   height:100%;
 }
 
 body{
- padding-top:50px; /*padding for navbar*/
+   padding-top:50px; /*padding for navbar*/
 }
 
 .navbar-custom .icon-bar {
@@ -51,16 +51,6 @@ body{
 
 #left {
 	height:100%;
-}
-
-#map-canvas {
-	width:50%;
-    height:calc(100% - 0);
-    position:absolute;
-    right:16px;
-    top:50px;
-    bottom:0;
-    overflow:hidden;
 }
 
 .controls {
@@ -105,3 +95,46 @@ body{
     font-weight: 300;
 }
 
+
+#map-canvas {
+    width:100%;
+    height:calc(100% - 0);
+    position:absolute;
+    right:0px;
+    top:50px;
+    bottom:0;
+    height: 50%;
+    overflow:hidden;
+}
+
+.tableDiv {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding-right: 30px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #map-canvas {
+        /*width:100%;*/
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #map-canvas {
+        width:50%;
+        height: 100%;
+    }
+    .tableDiv {
+        bottom: auto;
+        position: relative;
+        width: 50%;
+    }
+}
